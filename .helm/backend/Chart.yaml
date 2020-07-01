@@ -21,3 +21,11 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: 1.16.0
+keywords:
+  - g2o
+  - backend
+  - nest
+home: https://github.com/freely322/g2o-nest-backend
+maintainers:
+  - name: Bohdan Chornobrovkin
+    url: https://github.com/freely322

@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: g2otest/nest_backend
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: ":v0.01"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -41,13 +41,15 @@ service:
   port: 80
 
 ingress:
-  enabled: false
-  annotations: {}
+  enabled: true
+  annotations: {
+    nginx.ingress.kubernetes.io/rewrite-target: /
+  }
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
-      paths: []
+    - host: g2o.local
+      paths: ["/nest", "/test"]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
