@@ -1,5 +1,5 @@
 apiVersion: v2
-name: g2o-backend
+name: backend
 description: A Helm G2O backend chart for Kubernetes
 
 # A chart can be either an 'application' or a 'library' chart.
