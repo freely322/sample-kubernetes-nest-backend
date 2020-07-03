@@ -4,8 +4,6 @@
 
 replicaCount: 3
 
-host: go2olymp.co
-
 image:
   repository: g2otest/nest_backend_prod
   pullPolicy: IfNotPresent
@@ -52,7 +50,9 @@ ingress:
   }
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  paths: ["/"]
+  hosts:
+    - host: go2olymp.co
+      paths: ["/", "/nest", "/test"]
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
