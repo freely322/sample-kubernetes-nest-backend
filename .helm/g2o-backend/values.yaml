@@ -49,7 +49,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: 67.207.75.34/
+    - host: 67.207.75.34
       paths: ["/nest", "/test"]
   tls: []
   #  - secretName: chart-example-tls
