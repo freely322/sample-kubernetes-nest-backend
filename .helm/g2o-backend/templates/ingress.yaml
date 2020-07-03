@@ -29,7 +29,7 @@ spec:
   rules:
     - http:
         paths:
-          {{- range .paths }}
+          {{- range .Values.ingress.paths }}
           - path: {{ . }}
             backend:
               serviceName: {{ $fullName }}
