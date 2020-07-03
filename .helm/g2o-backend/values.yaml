@@ -7,7 +7,7 @@ replicaCount: 3
 host: go2olymp.co
 
 image:
-  repository: g2otest/nest_backend
+  repository: g2otest/nest_backend_prod
   pullPolicy: IfNotPresent
   port: 3000
   # Overrides the image tag whose default is the chart appVersion.
