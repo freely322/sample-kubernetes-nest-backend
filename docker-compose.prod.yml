@@ -2,8 +2,6 @@ version: '3'
 
 services:
   g2o-backend:
-    build:
-      context: .
     container_name: g2o-backend-production
     image: "g2otest/g2o-nest-backend-prod:v${PRODUCTION_VERSION}"
     environment:

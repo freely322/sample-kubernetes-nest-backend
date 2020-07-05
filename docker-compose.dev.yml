@@ -2,8 +2,6 @@ version: '3'
 
 services:
   g2o-backend:
-    build:
-      context: .
     image: "g2otest/g2o-nest-backend-dev:v${DEVELOPMENT_VERSION}"
     environment:
       - ENV=development

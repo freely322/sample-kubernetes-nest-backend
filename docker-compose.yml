@@ -2,10 +2,9 @@ version: '3'
 
 services:
   g2o-backend:
-    build: .
-    image: "g2otest/g2o-nest-backend:${PRODUCTION_VERSION}"
-    ports:
-      - '3000:3000'
+    build:
+      context: .
+      dockerfile: Dockerfile
 
 networks:
   node-network:
