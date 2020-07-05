@@ -4,7 +4,7 @@ services:
   g2o-backend:
     build:
       context: .
-    image: "g2otest/g2o-nest-backend-dev:${DEVELOPMENT_VERSION}"
+    image: "g2otest/g2o-nest-backend-dev:v${DEVELOPMENT_VERSION}"
     environment:
       - ENV=development
     container_name: g2o-backend-development

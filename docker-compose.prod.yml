@@ -5,7 +5,7 @@ services:
     build:
       context: .
     container_name: g2o-backend-production
-    image: "g2otest/g2o-nest-backend-prod:${PRODUCTION_VERSION}"
+    image: "g2otest/g2o-nest-backend-prod:v${PRODUCTION_VERSION}"
     environment:
       - ENV=production
     command: sh -c "npm run build && npm run start:prod"
