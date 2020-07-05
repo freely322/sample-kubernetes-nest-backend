@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: g2otest/nest_backend_prod
+  repository: g2otest/g2o-nest-backend-dev
   pullPolicy: IfNotPresent
   port: 3000
   # Overrides the image tag whose default is the chart appVersion.
