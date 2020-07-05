@@ -1,3 +1,2 @@
 image:
-  repository: g2otest/nest_backend_prod
-  tag: "v0.02"
+  tag: "v0.01"
