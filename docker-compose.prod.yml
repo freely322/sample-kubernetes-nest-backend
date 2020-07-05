@@ -1,6 +1,11 @@
 version: '3'
 
 services:
-  node-app:
-    container_name: node-app-prod
-    command: yarn start
+  g2o-backend:
+    build:
+      context: .
+    container_name: g2o-backend-production
+    image: "g2otest/g2o-nest-backend-prod:${PRODUCTION_VERSION}"
+    environment:
+      - ENV=production
+    command: sh -c "npm run build && npm run start:prod"

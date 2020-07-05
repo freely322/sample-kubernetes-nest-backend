@@ -1,6 +1,11 @@
 version: '3'
 
 services:
-  node-app:
-    container_name: node-app-dev
-    command: yarn dev -L
+  g2o-backend:
+    build:
+      context: .
+    image: "g2otest/g2o-nest-backend-dev:${DEVELOPMENT_VERSION}"
+    environment:
+      - ENV=development
+    container_name: g2o-backend-development
+    command: npm run start
