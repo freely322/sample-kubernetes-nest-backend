@@ -8,9 +8,10 @@ COPY package.json ./
 
 RUN npm i
 
+RUN npm run build
+
 COPY . .
 
 EXPOSE 3000
 
-RUN npm run build
 CMD ["npm", "run", "start:prod"]
