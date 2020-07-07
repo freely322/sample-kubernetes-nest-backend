@@ -21,6 +21,6 @@ metadata:
   namespace: default
 spec:
   type: ExternalName
-  externalName: http://go2olymp.tilda.ws
+  externalName: go2olymp.tilda.ws
   ports:
     - port: 80
