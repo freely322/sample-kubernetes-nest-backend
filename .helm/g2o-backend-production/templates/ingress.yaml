@@ -27,14 +27,17 @@ spec:
     {{- end }}
   {{- end }}
   rules:
+    - host: landing.go2olymp.co
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: g2o-landing
+              servicePort: 80
     {{- range .Values.ingress.hosts }}
     - host: {{ .host | quote }}
       http:
         paths:
-          - path: landing.go2olymp.co
-            backend:
-              serviceName: g2o-landing
-              servicePort: 80
           {{- range .paths }}
           - path: {{ . }}
             backend:
