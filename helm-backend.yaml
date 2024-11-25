@@ -1,4 +1,0 @@
-g2o-backend:
-  image:
-    repository: g2otest/nest_backend
-    tag: "v0.01"
